@@ -18,5 +18,14 @@ class PrefsViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
     }
+    @IBAction func popupValueChanged(sender: NSPopUpButton) {
+    }
+    @IBAction func sliderValueChanged(sender: NSSlider) {
+    }
+    @IBAction func cancelButtonClicked(sender: AnyObject) {
+    }
+    @IBAction func okButtonClicked(sender: AnyObject) {
+    }
+    
     
 }
