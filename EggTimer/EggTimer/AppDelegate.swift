@@ -18,12 +18,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        enableMenus(true, stop: false, reset: false)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
+    
+    func enableMenus(start: Bool, stop: Bool, reset: Bool) {
+        startTimerMenuItem.enabled = start
+        stopTimerMenuItem.enabled = stop
+        resetTimerMenuItem.enabled = reset
+    }
 
 }
 
